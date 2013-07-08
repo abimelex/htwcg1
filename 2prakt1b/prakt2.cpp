@@ -1,5 +1,5 @@
 /******************************
-* Praktikum 2 - Computer Grafik I 
+* Praktikum 1b - Computer Grafik I 
 * HTW-Dresden
 * Karl Adler
 * s62943
