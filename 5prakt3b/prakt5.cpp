@@ -65,7 +65,7 @@ static void initwheel(){
 			glVertex2f(x + sin(t)*r, y + cos(t)*r);
 		}
 		glEnd();
-			
+
 	glEndList();
 }
 
