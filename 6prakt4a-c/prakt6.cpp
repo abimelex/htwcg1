@@ -5,7 +5,7 @@
 * s62943
 * 
 * Auf Ubunutu compilieren mit:
-* g++ prakt5.cpp -lglut -lGL -lGLU -lGLEW -o prakt5
+* g++ prakt6.cpp -lglut -lGL -lGLU -lGLEW -o prakt6
 * 
 *******************************/
 #include <iostream>
@@ -285,17 +285,16 @@ void mySpecial(int specKey, int mouseX, int mouseY)
 	}
 	glutPostRedisplay(); //request display() call ASAP
 }
-//move with the mouse
+//handle click events of the mouse
 void myMouse(int button, int state, int x, int y)
 {
-	std::cout << button << std::endl;
 	switch (button)
 	{
 		case GLUT_LEFT_BUTTON:
 			if(state == GLUT_DOWN){
 				mouseXstart = x;
 				mouseYstart = y;
-				glutMotionFunc(rotateCube);
+				glutMotionFunc(rotateCube);	//mousemove function
 				}
 		break;
 		case 3:	//scroll up
